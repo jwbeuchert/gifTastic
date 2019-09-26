@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/javascript/gif.js"></script>
-    <title>GIFtastic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Gighy Fun!</title>
+    <style type="text/css">
+        button, div, form, input {
+            margin: 10px;
+        }
+        </style>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    
+
+    <!--Rendered buttons will be placed here-->    
+    <div id="buttonsView"></div>
+
+    <form id="car-from">
+        <h3 id="searchTitle">Add new Car!</h3>
+        <input type="text" id="car-input"><br>
+    </form>
 
 
+    <!--Button adds new cars-->
+    <input type="button" class="btn btn-danger" id="addcar" type="submit" value="Add car">
+</form>
+
+<!--cars will get dumped here-->
+<div id="carsView"></div>
 
 
+<script src='https://code.jquery.com/jquery-3.4.1.js'></script>
+<script type="text/javascript" src="assets/javascript/gif.js"></script>
 
-    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
 </body>
 </html>
